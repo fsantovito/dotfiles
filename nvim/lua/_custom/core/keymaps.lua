@@ -16,3 +16,6 @@ keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>fz", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>fw", "<cmd>Telescope grep_string<cr>")
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
+
+-- nvim-comment
+keymap.set({"v", "n"}, "<leader>/", ":CommentToggle<cr>")
