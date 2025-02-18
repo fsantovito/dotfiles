@@ -59,6 +59,9 @@ return {
 
         opts.desc = "Restart LSP"
         keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+        opts.desc = "Format buffer"
+        keymap.set('n', '<leader>fmd', '<cmd>lua vim.lsp.buf.format()<cr>', opts)
       end,
     })
 
